@@ -1,0 +1,375 @@
+
+<html>
+
+    <head>
+        <title>Tribute Page</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Project Freecode Camp">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Fran Escalada">
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+
+
+<style>
+
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
+
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+h1{
+  font-size:6rem;
+  margin:5px auto 20px   auto;
+}
+
+@media(max-width:500px) {  
+  h1{
+font-size: 4.5rem;
+}
+}
+
+#title-info{
+  display:flex;
+ justify-content: center;
+ align-items:center;
+ margin-top:-30px;
+}
+
+
+#flag{
+max-width:30px;
+height:auto;
+
+}
+
+#info{
+  font-family: Anton;
+  margin:10px 5px;
+  line-height: 1.2;
+  font-size: 1.8rem;
+}
+
+
+#img-div{
+background: white;
+padding: 10px;
+margin: 0;
+}
+
+
+#image{
+ 
+  max-width: 80%;
+  display: block;
+  height:auto;
+  margin: 0 auto;
+ 
+
+  }
+
+#img-caption {
+  margin: 5px 0px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+#header-quote{
+  position:absolute;
+  bottom:20em;
+  left:14em;
+  font-size: 200%;
+  text-align: left;
+  font-family:Anton;
+  line-height: 1.1;
+  max-width:80%;
+  color: rgb(228, 228, 228);
+}
+
+
+#tribute-info{
+display:flex;
+margin:50px 0px;
+justify-content: center;
+}
+
+
+#bio{flex-basis: 65%;}
+#palmares{flex-basis: 25%;}
+
+
+
+
+#bio-text, #palmares-text{
+  border-top-style: solid;
+  border-color: RGB(198,43,41);
+  border-width:6px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+  margin:0 30px 0 40px;
+  padding:12px;
+  text-align: left;
+}
+
+
+
+#palmares-title{
+  font-size: 4rem;
+  margin:2px 20px;
+}
+#palmares-img{
+flex-basis: 30%;
+max-width:20%;
+height:auto;
+margin-right:10px;
+}
+
+
+ #bio-title {
+ font-size: 4rem;
+ margin:2px 25px;
+ }
+
+
+#RG,#AO,#Wimbledon,#US,#Davis,#M1000{
+  display:flex;
+  justify-content: space;
+  margin-left:10px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,.15);
+  padding:10px;
+  margin:10px auto;
+ 
+}
+
+
+#rg-img{
+flex-basis: 10%;
+width:10%;
+height:10%;
+align-self:center;
+margin:auto 0px;
+
+}
+
+#rg-text{
+  flex-basis: 50%;
+  align-self:center;
+  font-size: 1.6rem;
+  margin:auto 30px;
+ 
+  }
+
+ul{
+  list-style-type:none;
+  text-align: left;
+  line-height: 1.5;
+  margin-left:-25px;
+}
+
+li{
+  text-decoration: none;
+  margin:16px 0;
+
+}
+
+
+blockquote{
+  font-style: italic;
+  max-width: 500px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
+
+
+#footer{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+
+}
+</style>
+
+
+
+
+
+<main id="main">
+ <div id="title"> 
+    <h1>
+      Roger Federer
+    </h1>
+  </div>
+
+  <div id="title-info">
+    <img id="flag" src="./img/suiza.jpg" alt="">
+    <p id="info">Swiss <br> Made</p>
+  </div>
+
+
+    <figure id="img-div"> 
+       <div id="img-text container"> <img
+          id="image"
+          src="./img/7.png"
+          alt=""
+         >
+      
+
+        </div>
+
+        <figcaption id="img-caption">
+         Roger Federer posando en una sesion fotografica antes de disputar la final del US Open
+        </figcaption>
+      </figure>
+
+      <section id="tribute-info">
+         
+        <div id="bio">
+          <div id="bio-text">
+            <div id="bio-header">
+              <h3 id="bio-title">Biography</h3>
+             
+            </div>
+            <ul>
+                <li>Roger Federer (Basilea, Suiza; 8 de agosto de 1981) es un tenista suizo,12​ vencedor de 20 títulos individuales en torneos de Grand Slam, 
+                el mayor número de toda la historia en tenis masculino y 
+                ha mantenido el puesto número 1 en el ranking de la ATP por un tiempo récord de 310 semanas, 
+                237 consecutivas. Actualmente ocupa el tercer lugar en la Clasificación de la ATP.</li> 
+           
+                <li>Convertido en profesional en 1998, permaneció entre los diez mejores tenistas desde 2002 hasta 2016; 
+                regresó a este selecto grupo después de su victoria en el Abierto de Australia 2017.
+                Roger Federer ha logrado ocho títulos del Campeonato de Wimbledon, 
+                seis del Abierto de Australia y cinco del Abierto de Estados Unidos, 
+                así como un título del Torneo de Roland Garros. </li>
+                
+
+              
+                <li>Es uno de los ocho tenistas que ha logrado vencer en los cuatro torneos del Grand Slam. 
+                También ostenta el mejor registro en el número de finales de Grand Slam jugadas: 31, diez de estas consecutivas, entre la final de Wimbledon 2005 y 
+                el Abierto de Estados Unidos 2007. </li>
+                
+                <li>Así mismo, ha logrado un registro imbatido de seis ATP World Tour Finals, 
+                28 Masters 1000, récord de 23 títulos ATP World Tour 500 y 25 ATP World Tour 250.
+                Su estilo de juego es versátil y apto para todo tipo de superficies, 
+                y se caracteriza por un excepcional movimiento de pies y variedad de golpes.</li>
+
+                <li>Efectivo tanto desde el fondo de pista como en la red, su aparente falta de esfuerzo durante los partidos, 
+                así como sus movimientos eficientes y elegantes, lo han convertido en un tenista muy popular entre sus muchos seguidores. </li>
+
+                <li>Ha sido galardonado trece veces con el Premio a la Deportividad y ha sido nombrado Jugador del Año por la ATP 
+                  y Campeón Mundial por la ITF en cinco ocasiones, mismo número de veces en que se la ha concedido 
+                  el Premio Laureus a Deportista del Año, cuatro de ellos consecutivos.</li>
+
+                  <li>La mayoría de los analistas deportivos,13​ autoridades deportivas 
+                y críticos del tenis,14​ la prensa especializada,15​ así como también los jugadores y exjugadores, 
+                consideran a Federer como el «mejor tenista de la historia»</li>
+              </ul>
+            </div>
+        </div>
+
+
+      <div id="palmares">
+          <div id="palmares-text">
+              <div id="palmares-header">
+                  <h3 id="palmares-title">Titles</h3>
+                 <!-- <img id="palmares-img" src="./img/award.jpg" alt=""> -->
+              </div>
+         
+             <div id="AO">    
+                <img id="rg-img" src="./img/ao.svg" alt="">
+                <p id="rg-text">Australia Open (6)</h3>   
+             </div>
+
+             <div id="RG">     
+                <img id="rg-img" src="./img/rg.png" alt="">
+                <p id="rg-text">Roland Garros (1)</h3>
+             </div>
+
+             <div id="Wimbledon">     
+                <img id="rg-img" src="./img/wimbledon.png" alt="">
+                <p id="rg-text">Wimbledon (8)</h3>
+             </div>
+
+             <div id="US">     
+                <img id="rg-img" src="./img/US.png" alt="">
+                <p id="rg-text">US Open (5)</h3>
+             </div>
+
+             <div id="Davis">     
+                <img id="rg-img" src="./img/Davis_Cup_Trophy.svg.png" alt="">
+                <p id="rg-text">Davis Cup (1)</h3>
+             </div>
+
+             
+             
+      </div>
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+<blockquote>
+<p> "I always believe if you’re stuck in a hole and maybe things aren’t going well you will come out stronger. 
+  Everything in life is this way."
+</p>
+
+<cite>
+   -- Roger Federer
+</cite>
+</blockquote>
+
+ <h3 id="footer">More info Available on this <a 
+    id="tribute-link"
+    href="https://es.wikipedia.org/wiki/Roger_Federer"
+    target="_blank"
+    >Wikipedia entry
+    </a>   
+  </h3>
+
+
+
+
+
+</section>
+
+</main>
+</html>
